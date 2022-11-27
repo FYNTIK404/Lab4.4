@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 
-    int a[20];
+    int a[10];
     int i, n;
 
 
@@ -22,16 +22,41 @@ int main()
     for (i = 0; i < n; i++)
         cout << "a[" << i << "]=" << a[i] << endl;
 
-    int multiple2 = 0;
+    int Division2 = 0;
     for (i = 0; i < n; i++)
     {
-        multiple2 = a[i] * 2;
-        cout << "Array [" << i << "] multiplied by two:" << multiple2 << endl;
+        Division2 = a[i] * 2;
+        cout << "Array [" << i << "] Division by two:" << Division2 << endl;
     }
+   int Sum = 0;
+   for (i = 0; i < n; i++)
+   {
+       if (a[i] % 2 == 0)
+       { 
+           cout << "Array [" << i << "]Dilyatsia na 2:" << a[i] << endl; 
+    
+       }
+    }
+   for (i = 0; i < n; i++)
+   {
+       if (a[i]>0)
+       {
+        Sum = a[i] + Sum;
+       }
+   }
+   for (i = 0; i < n; i++)
+   {
+       if (a[i]<0)
+       {
+           cout << "Array [" << i << "] Chucla menshe nylia:" << a[i] << endl;
 
+       }
+   }
+   cout << "Syma elementiv sho bilshe nylia:" << Sum << endl;
     cin;
     return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
