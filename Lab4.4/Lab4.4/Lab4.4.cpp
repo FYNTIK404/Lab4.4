@@ -26,34 +26,30 @@ int main()
     for (i = 0; i < n; i++)
     {
         Division2 = a[i] * 2;
-        cout << "Array [" << i << "] Division by two:" << Division2 << endl;
+        cout << "Array [" << i << "] Multiplied by two:" << Division2 << endl;
     }
    int Sum = 0;
-   for (i = 0; i < n; i++)
+    int Sum1 = 0;
+   for (i = 0; i < n; i++) 
    {
-       if (a[i] % 2 == 0)
+       if (a[i] > 0)
+       {
+           Sum = a[i] + Sum;
+       }
+       if (a[i] > 0)
        { 
            cout << "Array [" << i << "]Dilyatsia na 2:" << a[i] << endl; 
     
        }
-    }
-   for (i = 0; i < n; i++)
-   {
-       if (a[i]>0)
-       {
-        Sum = a[i] + Sum;
-       }
-   }
-   for (i = 0; i < n; i++)
-   {
-       if (a[i]<0)
+       if (a[i] < 0)
        {
            cout << "Array [" << i << "] Chucla menshe nylia:" << a[i] << endl;
 
-       }
+       }    
+       Sum1 = Sum1 = a[i];
    }
+   cout << Sum1 << endl;
    cout << "Syma elementiv sho bilshe nylia:" << Sum << endl;
-    cin;
     return 0;
 }
 
@@ -68,3 +64,5 @@ int main()
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+
